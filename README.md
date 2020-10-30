@@ -23,3 +23,15 @@ PluginInstall
 " :PluginSearch foo - searches for foo; append `!` to refresh local cache
 " :PluginClean - confirms removal of unused plugins; append `!` to auto-approve removal
 ```
+
+#youcompleteme
+
+```
+sudo apt-get install build-essential cmake python-dev  python3-dev clang
+git submodule update --init --recursive
+git clone --recursive https://github.com/ycm-core/YouCompleteMe.git ~/.vim/bundle/YouCompleteMe
+python3 ./install.py --system-libclang --clang-completer
+
+cp third_party/ycmd/examples/.ycm_extra_conf.py ~/.vim/
+
+```
